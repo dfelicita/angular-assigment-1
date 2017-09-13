@@ -1,14 +1,19 @@
 (function () {
 'use strict';
 
-	angular.module('LunchApp', []).controller('LunchController', LunchController);
-	LunchController.$inject = ['$scope'];
+	angular.module('LunchCheck', []).controller('LunchCheckController', LunchCheckController);
+	LunchCheckController.$inject = ['$scope'];
 	
-	function LunchController($scope) {
+	function LunchCheckController($scope) {
 	  	$scope.menu = "";
+	  	$scope.Response = "";
 
 		$scope.click = function(){
-			console.log('Click!!!');
+			if($scope.menu.length > 0){
+				$scope.Response = "OK";
+			}else{
+				$scope.Response = "Please enter data first";
+			}
 		};
 
 	}
