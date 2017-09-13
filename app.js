@@ -20,9 +20,14 @@
 					if(tam > 0)
 						contar++;
 				});
-    			if(contar > 3){
+				if(contar == 0){
+					$scope.isRed = true;
+					$scope.Response = "Please enter data first";
+				}else if(contar > 3){
+					$scope.isRed = false;
     				$scope.Response = "Too much!";
     			}else{
+    				$scope.isRed = false;
     				$scope.Response = "Enjoy!";
     			}
 			}else{
