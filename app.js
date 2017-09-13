@@ -6,10 +6,8 @@ angular.module('Lunch-app', [])
 
 LunchController.$inject = ['$scope'];
 $scope.menu = "";
-function Check($scope) {
-  
-  
-  
+function Check() {
+  console.log('Click');
 }
 
 })();
