@@ -1,11 +1,15 @@
 .red {
 	color: red;
 	padding: 10px;
-	border: 1px solid red;
+	border: 2px solid red;
 }
 
 .green {
 	color: green;
 	padding: 10px;
-	border: 1px solid green;
+	border: 2px solid green;
+}
+
+.none {
+	display: none;
 }
