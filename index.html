@@ -24,7 +24,7 @@
              <button class="btn btn-default" ng-click="click()">Check If Too Much</button>
          </div>
          <div class="form-group message">
-           <p ng-class="{red: isRed , green: !isRed}">{{Response}}</p>
+           <p ng-class="{red: isRed == true , green: isRed == false}">{{Response}}</p>
          </div>
    </div>
 
