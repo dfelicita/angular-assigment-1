@@ -20,7 +20,7 @@
 					if(tam > 0)
 						contar++;
 				});
-    			if(contar > 2){
+    			if(contar > 3){
     				$scope.Response = "Too much!";
     			}else{
     				$scope.Response = "Enjoy!";
