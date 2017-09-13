@@ -11,8 +11,10 @@
 
 		$scope.click = function(){
 			if($scope.menu.length > 0){
+				$scope.isRed = false;
 				$scope.Response = "OK";
 			}else{
+				$scope.isRed = true;
 				$scope.Response = "Please enter data first";
 			}
 		};
