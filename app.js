@@ -7,6 +7,7 @@
 	function LunchCheckController($scope) {
 	  	$scope.menu = "";
 	  	$scope.Response = "";
+	  	$scope.isRed = true;
 
 		$scope.click = function(){
 			if($scope.menu.length > 0){
