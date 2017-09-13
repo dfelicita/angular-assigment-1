@@ -20,7 +20,11 @@
 					if(tam > 0)
 						contar++;
 				});
-    			console.log('contar: ', contar);
+    			if(contar > 2){
+    				$scope.Response = "Too much!";
+    			}else{
+    				$scope.Response = "Enjoy!";
+    			}
 			}else{
 				$scope.isRed = true;
 				$scope.Response = "Please enter data first";
