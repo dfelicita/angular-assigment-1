@@ -13,7 +13,7 @@
 			if($scope.menu.length > 0){
 				$scope.isRed = false;
 				$scope.Response = "OK";
-				var array = menu.split(',');
+				var array = $scope.menu.split(',');
     			console.log('array', array);
 			}else{
 				$scope.isRed = true;
